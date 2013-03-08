@@ -1,6 +1,3 @@
-# Implementing the proof of concept secret sharing 
-from charm.toolbox.pairinggroup import PairingGroup,ZR,order
-
 class SecretShare:
     def __init__(self, element, verbose_status=True):
         self.elem = element
