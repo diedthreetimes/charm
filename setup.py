@@ -196,6 +196,7 @@ if platform.system() in ['Linux', 'Windows']:
    if opt.get('ECC_MOD') == 'yes': ecc_module.sources.append(benchmark_path  + 'benchmarkmodule.c')
 
 setup(name = 'Charm-Crypto',
+        zip_safe = False,
 	version =  _charm_version,
 	description = 'Charm is a framework for rapid prototyping of cryptosystems',
 	ext_modules = _ext_modules,
